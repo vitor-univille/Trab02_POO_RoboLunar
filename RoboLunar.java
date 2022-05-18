@@ -1,6 +1,6 @@
 public class RoboLunar {
     private int bateria;
-
+    
     public RoboLunar(){}
     public RoboLunar(int bateria){
         this.bateria = bateria;
@@ -18,7 +18,7 @@ public class RoboLunar {
             }
             Thread.sleep(1000);
             System.out.println("Andei "+mov+" metros");
-            this.bateria -= 10;
+            this.bateria -= 15;
         }else{
             Thread.sleep(1000);
             System.out.println("Bateria muito Baixa!");
