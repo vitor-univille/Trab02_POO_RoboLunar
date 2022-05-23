@@ -1,6 +1,6 @@
 public class RoboLunar {
     private int bateria;
-    
+
     public RoboLunar(){}
     public RoboLunar(int bateria){
         this.bateria = bateria;
@@ -11,21 +11,21 @@ public class RoboLunar {
     }
 
     public void andarFrente(int mov) throws InterruptedException{
-        if (bateria > 10){
+        if (bateria > bateria * 0.1){
             for (int i = 0; i < 3; i++) {
                 Thread.sleep(1000);
                 System.out.println("Andando para Frente...");
             }
             Thread.sleep(1000);
             System.out.println("Andei "+mov+" metros");
-            this.bateria -= 15;
+            this.bateria -= 10;
         }else{
             Thread.sleep(1000);
             System.out.println("Bateria muito Baixa!");
         }
     }
     public void andarATras(int mov) throws InterruptedException{
-        if (bateria > 10){
+        if (bateria > bateria * 0.1){
             for (int i = 0; i < 3; i++) {
                 Thread.sleep(1000);
                 System.out.println("Andando para Tras...");
@@ -40,7 +40,7 @@ public class RoboLunar {
     }
 
     public void virarEsquerda(int grau) throws InterruptedException{
-        if (bateria > 10){
+        if (bateria > bateria * 0.1){
             for (int i = 0; i < 2; i++) {
                 Thread.sleep(1000);
                 System.out.println("<<< Virando a Esquerda");
@@ -58,7 +58,7 @@ public class RoboLunar {
         }
     }
     public void virarDireita(int grau) throws InterruptedException{
-        if (bateria > 10){
+        if (bateria > bateria * 0.1){
             for (int i = 0; i < 2; i++) {
                 Thread.sleep(1000);
                 System.out.println("Virando a Direita >>>");
@@ -77,7 +77,7 @@ public class RoboLunar {
     }
 
     public void tirarFoto() throws InterruptedException{
-        if (bateria > 10){
+        if (bateria > bateria * 0.1){
             Thread.sleep(1000);
             System.out.println("Foto Tirada:");
             System.out.println("\n        _____");
