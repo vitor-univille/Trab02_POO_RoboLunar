@@ -1,8 +1,6 @@
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-        new MyFrame();
-
         RoboLunar robo = new RoboLunar(100);
         robo.setBateria(200);
         robo.virarDireita(20);
